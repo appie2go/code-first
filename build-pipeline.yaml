@@ -2,4 +2,13 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: NuGetCommand@2
+
 - task: MSBuild@1
+
+- task: DotNetCoreCLI@2
+  displayName: 'Install dotnet-ef'
+  inputs:
+    command: custom
+    custom: tool
+    arguments: 'install --global dotnet-ef'
