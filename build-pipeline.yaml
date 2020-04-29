@@ -13,10 +13,10 @@ steps:
   inputs:
     command: custom
     custom: tool
-    arguments: 'install --global dotnet-ef'
+    arguments: 'install --global dotnet-ef --version 3.0.0-*'
     
 - task: DotNetCoreCLI@2
-  displayName: 'Migrate the database'
+  displayName: 'Create migration'
   inputs:
     command: custom
     custom: ef
