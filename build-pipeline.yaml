@@ -21,3 +21,13 @@ steps:
     command: custom
     custom: ef
     arguments: 'migrations script -i -o migration.sql'
+
+- task: SqlAzureDacpacDeployment@1
+  displayName: Install the database
+  inputs:
+    azureSubscription: '<Azure service connection>'
+    ServerName: '<Database server name>'
+    DatabaseName: '<Database name>'
+    SqlUsername: '<SQL user name>'
+    SqlPassword: '<SQL user password>'
+    DacpacFile: 'migration.sql'
