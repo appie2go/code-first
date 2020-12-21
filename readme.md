@@ -8,4 +8,4 @@ Read how it all works here:
 Star if you like it. Send me a message if you don't.
 
 ## Sponsor me
-[Buy me a coffee!](buymeacoffee.com/appie2go)
+[Buy me a coffee!](https://buymeacoffee.com/appie2go)
